@@ -1,4 +1,4 @@
-// Make an array
+// Make an array of all possible answers using images with answers written on them. You can make your own images or you can choose to not use any images and just use words.
 const answer = [
     './img/strawberry1.png',
     './img/strawberry2.png',
@@ -16,31 +16,32 @@ const answer = [
     './img/strawberry14.png',
 ]
 
-// Insert default image
-const defaultImage = document.getElementById('defaultImage');
-defaultImage.src = './img/strawberry0.png';
-defaultImage.style.width = '500px';
+// Insert default image, which will shows up at the beginning of your session. When you refresh the browser instead of using the button to submit the question, the default image will show instead of any of the answer images.
+
+    const defaultImage = document.getElementById('defaultImage'); // you can use any name you want so for here I use 'defaultImage' as the name. See index file where it is the ID name for 'input' field.
+
+    defaultImage.src = './img/strawberry0.png'; // attach the defaultImage URL. Here I attach directly from the img folder.
+
+    defaultImage.style.width = '500px'; // you can change the size of the image but I use 500px because that is the original size of all the images used.
 
 // Add button
-const button = document.querySelector("#button");
+    const button = document.querySelector("#button");
 
-// Make input work
-const input = document.getElementById("input");
+// Make input field work
+    const input = document.getElementById("input");
 
 // Make button work
-button.addEventListener("click", function() {
-    if (input.value.length <1) {
-    alert("Please ask a question!")
-    } else {
-        shake();
-        
-    }
-})
+    button.addEventListener("click", function() {
+        if (input.value.length <1) { // if the value of what you put in the input field is less than 1, meaning there is no content then you will receive the alert on the next line.
+        alert("Darling, please ask a question in the box!") // this alert will pop up if you put nothing in the box but hit the shake button anyways.
+        } else { // this means if the above didn't happen, such that you actually input a question and hit the shake button...
+            shake(); // ...then the image shake with this code. This code invoke the shake function below.
+        }
+    })
 
 // Shake function
 function shake() {
     button.disabled = true;
-    // button.classList.toggle("shakeButtonDisplay");
     defaultImage.classList.add('shake'); // add shaking feature
     document.getElementById('input').value = ""; // clear input field after submit
     
