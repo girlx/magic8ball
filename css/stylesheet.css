@@ -10,10 +10,6 @@ body {
     justify-items: center;
     font-family: 'Roboto', sans-serif;}
 
-.jumbotron {
-    background-color: transparent;
-}
-
 .container {
     background-color: transparent;
     align-items: center;
