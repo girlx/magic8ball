@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
 
 body {
-    background-color: rgb(243,68,68);
+    background: linear-gradient(90deg, palegreen 20%, #ffed4b 70%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100%;
     margin: 0 auto;
     justify-items: center;
+    display: flex;
     font-family: 'Raleway', sans-serif;
 }
 
-.jumbotron {
-    background-color: rgb(255, 245, 133);
-}
-
 .container {
-    background-color: rgb(255, 245, 133);
     align-items: center;
     margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -23,7 +23,36 @@ body {
 
 h1 {
     font-family: 'Shrikhand', cursive;
-    font-size: 3em;
+    font-size: 6em;
+    color: rgb(192, 83, 147);
+}
+
+input { 
+    text-align: center; 
+}
+
+input[type="text"] {
+    font-size: 1.5em;
+    color:rgb(192, 83, 147);
+    font-family: 'Shrikhand', cursive;
+    width: 400px;
+    background-color: rgb(238, 194, 194);
+    border-color:rgb(238, 194, 194);
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+input[type="button"] {
+    font-size: 1.5em;
+    color: white;
+    font-family: 'shrikhand', cursive;
+    width: 400px;
+    background-color: rgb(192, 83, 147);
+    border-color:rgb(192, 83, 147);
+    border-style: solid;
+    border-radius: 10px;
+
 }
 
 /* shake function */
@@ -47,38 +76,56 @@ h1 {
 }
 
 /* media query to make website responsive */
+@media (min-width: 200px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img src {
+        width: 100px;
+    }
+
+}
+
 @media (min-width: 400px) {
-    .h1 {
+    h1 {
         font-size: 3rem;
     }
-    img {
-        width: 30%;
+
+    img src {
+        width: 200px;
     }
+
 }
 
 @media (min-width: 600px) {
-    .h1 {
+    h1 {
         font-size: 4rem;
     }
-    img {
-        width: 50%;
+
+    img src {
+        width: 300px;
     }
+
 }
 
 @media (min-width: 800px) {
-    .h1 {
+    h1 {
         font-size: 5rem;
     }
-    img {
-        width: 70%;
+
+    img src {
+        width: 400px;
     }
 }
 
 @media (min-width: 1000px) {
-    .h1 {
-        font-size: 5.625rem;
+    h1 {
+        font-size: 6rem;
     }
-    img {
-        width: 100%;
+
+    img src {
+        width: 500px;
     }
+
 }

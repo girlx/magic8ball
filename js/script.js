@@ -61,3 +61,4 @@ function changeAnswer() {
     console.log("defaultImage", answer[Math.floor(Math.random() * answer.length)])
 }
 
+
