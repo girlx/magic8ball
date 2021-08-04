@@ -33,7 +33,7 @@ const answer = [
 // Make button work
     button.addEventListener("click", function() {
         if (input.value.length <1) { // if the value of what you put in the input field is less than 1, meaning there is no content then you will receive the alert on the next line.
-        alert("Darling, please ask a question in the box!") // this alert will pop up if you put nothing in the box but hit the shake button anyways.
+        alert("Please ask a question in the box!") // this alert will pop up if you put nothing in the box but hit the shake button anyways.
         } else { // this means if the above didn't happen, such that you actually input a question and hit the shake button...
             shake(); // ...then the image shake with this code. This code invoke the shake function below.
         }

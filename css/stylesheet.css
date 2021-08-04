@@ -118,39 +118,39 @@ input[type="button"]:hover {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
   
 /* Links */
-  .active, .collapsible:hover {
+.active, .collapsible:hover {
     background: linear-gradient(90deg, #ffed4b 20%, palegreen 70%);
-    
-  }
-  
-  .content {
+}
+
+.content {
     padding: 0 px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-    width: 100%;
+    width: auto;
+    word-wrap: break-word;
     text-align: center;
     font-size: 10pt;
     padding: 10px 10px 10px 10px;
-  }
+}
 
-  a:link{
+a:link{
     color:rgb(109, 0, 64);
     text-decoration: none;
-  }
+}
 
-  a:visited {
+a:visited {
     color:rgb(192, 83, 147);
     text-decoration: italic;
-  }
+}
 
-  a:hover {
-      color: white;
-      background-color: rgb(109, 0,  64);
-  }
+a:hover {
+    color: white;
+    background-color: rgb(109, 0,  64);
+}
 
   /* media query to make website responsive */
 @media (min-width: 200px) {
