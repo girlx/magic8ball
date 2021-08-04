@@ -35,7 +35,7 @@ input[type="text"] {
     font-size: 1.5em;
     color: rgb(109, 0,  64);
     font-family: 'Shrikhand', cursive;
-    width: auto;
+    width: 30%;
     word-wrap: break-word;
     background-color: rgb(238, 194, 194);
     border-color:rgb(238, 194, 194);
@@ -54,16 +54,16 @@ input[type="text"]:focus{
 
 /* Placeholder styling for different browsers */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-color: white;
-opacity: 1; /* Firefox */
+    color: white;
+    opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-color:white;
+    color:white;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-color: white;
+    color: white;
 }
 
 /* Button styling */
@@ -71,7 +71,7 @@ input[type="button"] {
     font-size: 1.5em;
     color: white;
     font-family: 'shrikhand', cursive;
-    width: auto;
+    width: 30%;
     word-wrap: break-word;
     background-color: rgb(192, 83, 147);
     border-color:rgb(192, 83, 147);
@@ -112,8 +112,6 @@ input[type="button"]:hover {
     color:rgb(109, 0, 64);
     cursor: pointer;
     padding: 5px;
-    width: auto;
-    word-wrap: break-word;
     border: none;
     margin: 0 auto;
     padding-top: 10px;
@@ -123,6 +121,7 @@ input[type="button"]:hover {
 /* Links */
 .active, .collapsible:hover {
     background: linear-gradient(90deg, #ffed4b 20%, palegreen 70%);
+    width: 100%;
 }
 
 .content {
@@ -130,8 +129,7 @@ input[type="button"]:hover {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-    width: auto;
-    word-wrap: break-word;
+    width: 100%;
     text-align: center;
     font-size: 10pt;
     padding: 10px 10px 10px 10px;
