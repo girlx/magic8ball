@@ -24,7 +24,7 @@ body {
 h1 {
     text-align: center;
     font-family: 'Shrikhand', cursive;
-    font-size: 6em;
+    font-size: 5em;
     color: rgb(192, 83, 147);
     margin-bottom: 30px;
 }
@@ -35,8 +35,8 @@ input[type="text"] {
     font-size: 1.5em;
     color: rgb(109, 0,  64);
     font-family: 'Shrikhand', cursive;
-    width: 30%;
-    word-wrap: break-word;
+    width: auto;
+    height: auto;
     background-color: rgb(238, 194, 194);
     border-color:rgb(238, 194, 194);
     border-style: solid;
@@ -71,8 +71,8 @@ input[type="button"] {
     font-size: 1.5em;
     color: white;
     font-family: 'shrikhand', cursive;
-    width: 30%;
-    word-wrap: break-word;
+    width: auto;
+    height: auto;
     background-color: rgb(192, 83, 147);
     border-color:rgb(192, 83, 147);
     border-style: solid;
@@ -153,13 +153,13 @@ a:hover {
   /* media query to make website responsive */
 @media (min-width: 200px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 }
 
 @media (min-width: 400px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -171,12 +171,12 @@ a:hover {
 
 @media (min-width: 800px) {
     h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
 
 @media (min-width: 1000px) {
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 }
