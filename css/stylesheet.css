@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     background: linear-gradient(90deg, palegreen 20%, #ffed4b 70%);
@@ -7,42 +8,68 @@ body {
     height: 100%;
     margin: 0 auto;
     justify-items: center;
-    display: flex;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;}
+
+.jumbotron {
+    background-color: transparent;
 }
 
 .container {
+    background-color: transparent;
     align-items: center;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: grid;
     justify-items: center;
     flex-direction: column;
-}
+} 
 
 h1 {
+    text-align: center;
     font-family: 'Shrikhand', cursive;
     font-size: 6em;
     color: rgb(192, 83, 147);
+    margin-bottom: 30px;
 }
 
-input { 
-    text-align: center; 
-}
-
+/* Input field styling */
 input[type="text"] {
+    text-align: center;
     font-size: 1.5em;
-    color:rgb(192, 83, 147);
+    color: rgb(109, 0,  64);
     font-family: 'Shrikhand', cursive;
     width: 400px;
     background-color: rgb(238, 194, 194);
     border-color:rgb(238, 194, 194);
     border-style: solid;
     border-radius: 10px;
-
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
+/* Changes the input field when clicked */
+input[type="text"]:focus{
+    outline: 0px solid rgb(109, 0, 64); /* 0px because if not included then the outline is black by default */
+    background:linear-gradient(90deg, rgb(192, 83, 147) 20%, rgb(109, 0, 64) 70%);
+    color: rgb(225, 245, 47);
+  }
+
+/* Placeholder styling for different browsers */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: white;
+opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color:white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: white;
+}
+
+/* Button styling */
 input[type="button"] {
     font-size: 1.5em;
     color: white;
@@ -52,11 +79,17 @@ input[type="button"] {
     border-color:rgb(192, 83, 147);
     border-style: solid;
     border-radius: 10px;
-
+    margin-bottom: 60px;
 }
 
-/* shake function */
+/* Changes the button when hover */
+input[type="button"]:hover {
+    color:rgb(225, 245, 47);
+    background:linear-gradient(90deg, rgb(192, 83, 147) 20%, rgb(109, 0, 64) 70%);
+}
 
+
+/* shake function */
 .shake {
     animation: shake 1s;
 }
@@ -105,3 +138,49 @@ input[type="button"] {
         font-size: 6rem;
     }
 }
+
+/* Collapsible */
+.collapsible {
+    background-color: transparent;
+    color:rgb(109, 0, 64);
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+/* Links */
+  .active, .collapsible:hover {
+    background: linear-gradient(90deg, #ffed4b 20%, palegreen 70%);
+    
+  }
+  
+  .content {
+    padding: 0 px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  a:link{
+    color:rgb(109, 0, 64);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color:rgb(192, 83, 147);
+    text-decoration: italic;
+  }
+
+  a:hover {
+      color: white;
+      background-color: rgb(109, 0,  64);
+  }
