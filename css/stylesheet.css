@@ -35,7 +35,8 @@ input[type="text"] {
     font-size: 1.5em;
     color: rgb(109, 0,  64);
     font-family: 'Shrikhand', cursive;
-    width: 400px;
+    width: auto;
+    word-wrap: break-word;
     background-color: rgb(238, 194, 194);
     border-color:rgb(238, 194, 194);
     border-style: solid;
@@ -70,7 +71,8 @@ input[type="button"] {
     font-size: 1.5em;
     color: white;
     font-family: 'shrikhand', cursive;
-    width: 400px;
+    width: auto;
+    word-wrap: break-word;
     background-color: rgb(192, 83, 147);
     border-color:rgb(192, 83, 147);
     border-style: solid;
@@ -104,7 +106,53 @@ input[type="button"]:hover {
     100% {transform: translate(-4px, -4px) rotate(-20deg); }
 }
 
-/* media query to make website responsive */
+/* Collapsible */
+.collapsible {
+    background-color: transparent;
+    color:rgb(109, 0, 64);
+    cursor: pointer;
+    padding: 5px;
+    width: auto;
+    word-wrap: break-word;
+    border: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+/* Links */
+  .active, .collapsible:hover {
+    background: linear-gradient(90deg, #ffed4b 20%, palegreen 70%);
+    
+  }
+  
+  .content {
+    padding: 0 px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    padding: 10px 10px 10px 10px;
+  }
+
+  a:link{
+    color:rgb(109, 0, 64);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color:rgb(192, 83, 147);
+    text-decoration: italic;
+  }
+
+  a:hover {
+      color: white;
+      background-color: rgb(109, 0,  64);
+  }
+
+  /* media query to make website responsive */
 @media (min-width: 200px) {
     h1 {
         font-size: 1.5rem;
@@ -134,49 +182,3 @@ input[type="button"]:hover {
         font-size: 6rem;
     }
 }
-
-/* Collapsible */
-.collapsible {
-    background-color: transparent;
-    color:rgb(109, 0, 64);
-    cursor: pointer;
-    padding: 5px;
-    width: 100%;
-    border: none;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-/* Links */
-  .active, .collapsible:hover {
-    background: linear-gradient(90deg, #ffed4b 20%, palegreen 70%);
-    
-  }
-  
-  .content {
-    padding: 0 px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    width: 100%;
-    text-align: center;
-    font-size: 10pt;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  a:link{
-    color:rgb(109, 0, 64);
-    text-decoration: none;
-  }
-
-  a:visited {
-    color:rgb(192, 83, 147);
-    text-decoration: italic;
-  }
-
-  a:hover {
-      color: white;
-      background-color: rgb(109, 0,  64);
-  }
