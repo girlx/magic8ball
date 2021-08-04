@@ -30,6 +30,53 @@ const answer = [
 // Make input field work
     const input = document.getElementById("input");
 
+// Styling for alert box
+    var ALERT_TITLE = "oh no!";
+    var ALERT_BUTTON_TEXT = "okay";
+
+    if(document.getElementById) {
+    window.alert = function(txt) {
+        createCustomAlert(txt);
+    }
+    }
+
+    function createCustomAlert(txt) {
+    d = document;
+
+    if(d.getElementById("modalContainer")) return;
+
+    mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+    mObj.id = "modalContainer";
+    mObj.style.height = d.documentElement.scrollHeight + "px";
+    
+    alertObj = mObj.appendChild(d.createElement("div"));
+    alertObj.id = "alertBox";
+    if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+    alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+    alertObj.style.visibility="visible";
+
+    h1 = alertObj.appendChild(d.createElement("h1"));
+    h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+    msg = alertObj.appendChild(d.createElement("p"));
+    //msg.appendChild(d.createTextNode(txt));
+    msg.innerHTML = txt;
+
+    btn = alertObj.appendChild(d.createElement("a"));
+    btn.id = "closeBtn";
+    btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+    btn.href = "#";
+    btn.focus();
+    btn.onclick = function() { removeCustomAlert();return false; }
+
+    alertObj.style.display = "block";
+  
+}
+
+function removeCustomAlert() {
+  document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+}
+
 // Make button work
     button.addEventListener("click", function() {
         if (input.value.length <1) { // if the value of what you put in the input field is less than 1, meaning there is no content then you will receive the alert on the next line.
@@ -76,4 +123,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
