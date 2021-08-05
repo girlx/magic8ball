@@ -8,6 +8,7 @@ body {
     height: 100%;
     margin: 0 auto;
     justify-items: center;
+    display: flex;
     font-family: 'Roboto', sans-serif;}
 
 .container {
@@ -183,7 +184,7 @@ a:hover {
 
 /* alert styling */
 #modalContainer {
-    background-color:rgba(201, 32, 3, 0.788);
+    background-color: transparent;
     position:absolute;
     top:0;
     width:100%;

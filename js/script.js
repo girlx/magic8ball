@@ -1,31 +1,42 @@
 // Make an array of all possible answers using images with answers written on them. You can make your own images or you can choose to not use any images and just use words.
 const answer = [
-    './img/strawberry1.png',
-    './img/strawberry2.png',
-    './img/strawberry3.png',
-    './img/strawberry4.png',
-    './img/strawberry5.png',
-    './img/strawberry6.png',
-    './img/strawberry7.png',
-    './img/strawberry8.png',
-    './img/strawberry9.png',
-    './img/strawberry10.png',
-    './img/strawberry11.png',
-    './img/strawberry12.png',
-    './img/strawberry13.png',
-    './img/strawberry14.png',
+    './img/2.png',
+    './img/3.png',
+    './img/4.png',
+    './img/5.png',
+    './img/6.png',
+    './img/7.png',
+    './img/8.png',
+    './img/9.png',
+    './img/10.png',
+    './img/11.png',
+    './img/12.png',
+    './img/13.png',
+    './img/14.png',
+    './img/15.png',
+    './img/16.png',
+    './img/17.png',
+    './img/18.png',
+    './img/19.png',
+    './img/20.png',
+    './img/21.png',
+    './img/22.png',
+    './img/23.png',
 ]
 
 // Insert default image, which will shows up at the beginning of your session. When you refresh the browser instead of using the button to submit the question, the default image will show instead of any of the answer images.
 
     const defaultImage = document.getElementById('defaultImage'); // you can use any name you want so for here I use 'defaultImage' as the name. See index file where it is the ID name for 'input' field.
 
-    defaultImage.src = './img/strawberry0.png'; // attach the defaultImage URL. Here I attach directly from the img folder.
+    defaultImage.src = './img/1.png'; // attach the defaultImage URL. Here I attach directly from the img folder.
 
     defaultImage.style.width = '500px'; // you can change the size of the image but I use 500px because that is the original size of all the images used.
 
 // Add button
     const button = document.querySelector("#button");
+
+    // add sound
+    const myAudio = document.querySelector("#audio");
 
 // Make input field work
     const input = document.getElementById("input");
@@ -83,6 +94,8 @@ function removeCustomAlert() {
         alert("Please ask a question in the box!") // this alert will pop up if you put nothing in the box but hit the shake button anyways.
         } else { // this means if the above didn't happen, such that you actually input a question and hit the shake button...
             shake(); // ...then the image shake with this code. This code invoke the shake function below.
+            myAudio.play(); // ...then plays audio..
+
         }
     })
 
