@@ -94,6 +94,7 @@ const answer = [
         alert("Please ask a question in the box!") // this alert will pop up if you put nothing in the box but hit the shake button anyways.
         } else { // this means if the above didn't happen, such that you actually input a question and hit the shake button...
             shake(); // ...then the image shake with this code. This code invoke the shake function below.
+            myAudio.currentTime=0;
             myAudio.play(); // ...then plays audio..
 
         }
