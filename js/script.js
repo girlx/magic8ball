@@ -84,8 +84,8 @@ const answer = [
   
 }
 
-function removeCustomAlert() {
-  document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+    function removeCustomAlert() {
+    document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
 }
 
 // Make button work
