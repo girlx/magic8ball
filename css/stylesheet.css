@@ -17,6 +17,8 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: grid;
     justify-items: center;
     flex-direction: column;
@@ -78,7 +80,7 @@ input[type="button"] {
     border-color:rgb(192, 83, 147);
     border-style: solid;
     border-radius: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /* Changes the button when hover */
@@ -129,7 +131,7 @@ input[type="button"]:hover {
     padding: 0 px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: white;
     width: 100%;
     text-align: center;
     font-size: 10pt;
