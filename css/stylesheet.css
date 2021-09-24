@@ -158,11 +158,19 @@ a:hover {
     h1 {
         font-size: 3rem;
     }
+    img {
+        width: 50%;
+        height: auto;
+    }
 }
 
 @media (min-width: 400px) {
     h1 {
         font-size: 3.5rem;
+    }
+    img {
+        width: 60%;
+        height: auto;
     }
 }
 
@@ -170,11 +178,19 @@ a:hover {
     h1 {
         font-size: 4rem;
     }
+    img {
+        width: 70%;
+        height: auto;
+    }
 }
 
 @media (min-width: 800px) {
     h1 {
         font-size: 4.5rem;
+    }
+    img {
+        width: 80%;
+        height: auto;
     }
 }
 
