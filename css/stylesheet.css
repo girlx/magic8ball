@@ -162,18 +162,14 @@ a:hover {
         width: 50%;
         height: auto;
     }
+    .container {
+        width: 50%;
+    }
 }
 
 @media (min-width: 400px) {
     h1 {
         font-size: 3.5rem;
-    }
-    img {
-        width: 60%;
-        height: auto;
-    }
-    .container {
-        width: 60%;
     }
 }
 
@@ -181,19 +177,11 @@ a:hover {
     h1 {
         font-size: 4rem;
     }
-    img {
-        width: 70%;
-        height: auto;
-    }
 }
 
 @media (min-width: 800px) {
     h1 {
         font-size: 4.5rem;
-    }
-    img {
-        width: 80%;
-        height: auto;
     }
 }
 
